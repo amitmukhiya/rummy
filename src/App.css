@@ -32,7 +32,146 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.container-1 {
+  align-items: center;
+  color: antiquewhite;
+  height: 100vh;
+  background-image: linear-gradient(to right, #434343 0%, rgb(237, 21, 21) 100%);
+}
+
+/* image */
+.rummy_img {
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+
+@media screen and (max-width:700px) {
+
+  .container-1 {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  /* .email {
+    font-size: 16px;
+  } */
+}
+
+/* footer email section */
+@media screen and (max-width:356px) {
+
+  .email {
+    font-size: 16px;
+    padding: 1 1;
+  }
+}
+
+@media screen and (max-width:276px) {
+
+  .email {
+    font-size: 12px;
+  }
+}
+
+/* 
+@media screen and (max-width:250px) {
+  .animated-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+} */
+/* payment section */
+.payment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+
+}
+
+.container {
+  /* font-size: medium; */
+  font-weight: bolder;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.payment img {
+  width: 80%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 100%;
+  border: 5px solid rgb(188, 192, 213);
+}
+
+@media screen and (max-width:492px) {
+  .payment img {
+    width: 70%;
+    height: auto;
+    margin-left: 0;
+  }
+
+
+}
+
+@media screen and (max-width:472px) {
+  .payment img {
+    width: 60%;
+    height: auto;
+  }
+
+  .payment .bank {
+    margin-top: 20px;
+  }
+
+}
+
+.payment .bank {
+  margin-left: 10px;
+}
+
+/* gaming experience */
+.component-3 {
+  margin-top: 30px;
+}
+
+/* img-1 */
+.img_1 img {
+  width: 70%;
+  height: auto;
+}
+
+.poker {
+  justify-content: space-between;
+  /* border: 2px solid red; */
 }
