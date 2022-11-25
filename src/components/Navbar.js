@@ -1,13 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import logo1 from './images/logo2.png'
 
 export default function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand fw-bold" href="/">
-            Rummy
-          </a>
+          <Link to="/" className="navbar-brand fw-bold text-danger
+
+"><img src={logo1} alt="Bootstrap" width="auto" height="80px" /></Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -20,31 +22,36 @@ export default function Navbar() {
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-dark">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
+                <Link to="/" className="nav-link">Home</Link>
+
               </li>
               <li className="nav-item">
-                <a
+                <Link to="/Privacy"
                   className="nav-link"
-                  href="https://sites.google.com/view/entwikrummyprivacypolicy/home"
                 >
                   Privacy & Policy
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link to="/terms_conditions"
                   className="nav-link"
-                  href="https://sites.google.com/view/entwik-rummy-termconditions/home"
                 >
                   Terms & Conditions
-                </a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/legality"
+                  className="nav-link"
+                >
+                  Legality
+                </Link>
               </li>
             </ul>
           </div>
         </div>
+
       </nav>
     </>
   );

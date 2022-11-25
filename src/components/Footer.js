@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -8,22 +9,28 @@ export default function Footer() {
         <footer>
           <div className="ft-main">
             <div className="policy py-1 my-1">
-              <a
+              <Link to="/Privacy"
                 className="px-5"
-                href="https://sites.google.com/view/entwikrummyprivacypolicy/home"
               >
-                Privacy Policy
-              </a>
-              <a href="https://sites.google.com/view/entwik-rummy-termconditions/home">
-                Terms and Conditions
-              </a>
+                Privacy & Policy
+              </Link>
+              <Link to="/terms_conditions"
+                className="px-5"
+              >
+                Terms & Conditions
+              </Link>
+              <Link to="/legality"
+                className="px-5"
+              >
+                Legality
+              </Link>
             </div>
             <div className="contact">
-              <h4 className="text-warning">
+              <h4 className="text-warning my-2">
                 For any query, Feel free to contact us and we will get back to
                 you with solution.
               </h4>
-              <p className="email px-4 py-1 my-1">team.entwik@gmail.com</p>
+              <p className="email px-4 py-1 my-3">team.entwik@gmail.com</p>
             </div>
           </div>
           <hr />

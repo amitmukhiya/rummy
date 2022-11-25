@@ -34,7 +34,8 @@
   align-items: center;
   color: antiquewhite;
   height: 100vh;
-  background-image: linear-gradient(to right, #434343 0%, rgb(237, 21, 21) 100%);
+  background-image: linear-gradient(to right, #1a0046 0%, rgb(248, 2, 2) 100%);
+
 }
 
 .home2 {
@@ -180,4 +181,90 @@
 .rummy_img2 {
   width: 60%;
   padding-top: 10px;
+}
+
+/* privacy policy */
+.heading {
+  padding: 8% 0;
+  /* border: 2px solid red; */
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.heading h1 {
+  color: rgb(194, 231, 8);
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.contentPart h2 {
+  margin: 20px;
+  color: blue;
+}
+
+.contentPart h5 {
+  margin: 15px;
+}
+
+.contentPart {
+  text-align: left;
+  margin: 30px 10%;
+}
+
+.contentPart li {
+  list-style: square;
+  margin: 5px 0;
+}
+
+.contentPart b li {
+  list-style: outside;
+  margin: 10px;
+}
+
+.px-5 {
+  margin: 10px 5px;
+  text-decoration: none;
+}
+
+.px-5:hover {
+  color: yellow;
+  transition: .8s;
+}
+
+.navbar {
+  background-image: linear-gradient(to right, #870000, #870000);
+}
+
+.nav-item .nav-link {
+  color: white;
+  margin: 15px;
+  font-size: 18px;
+}
+
+.nav-item .nav-link:hover {
+  transition: 0.8s;
+  /* color: blue; */
+}
+
+.nav-item .nav-link {
+  text-decoration: none;
+  display: block;
+  font-family: 'Merriweather', serif;
+  color: white;
+  margin: 15px;
+  font-size: 18px;
+}
+
+.nav-item .nav-link::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  margin: auto;
+  display: block;
+
+}
+
+.nav-item .nav-link:hover::after {
+  width: 100%;
+  transition: .5s;
 }

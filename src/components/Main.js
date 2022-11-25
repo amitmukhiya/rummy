@@ -2,7 +2,6 @@ import React from "react";
 import "./Button.css";
 import upi from "./images/upi.webp";
 import bank from "./images/bank.webp";
-// import a4 from "./images/4a.png";
 
 export default function Main() {
   return (
