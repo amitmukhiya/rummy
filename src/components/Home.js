@@ -1,13 +1,14 @@
 import React from "react";
-import img1 from "./images/main.png";
+import img1 from "./images/main3.png";
 import "./Button.css";
-import circle from "./images/circle.png";
+import Home2 from "./Home2";
+import Main from "./Main";
 
 export default function Home() {
   return (
     <>
       <div className="container-1 d-flex justify-content-around flex-wrap-wrap">
-        <div className="rummy" style={{ flexBasis: "52%" }}>
+        <div className="rummy" style={{ flexBasis: "50%" }}>
           <img
             className="rummy_img"
             src={img1}
@@ -18,8 +19,8 @@ export default function Home() {
           />
         </div>
         <div
-          className="download d-flex flex-column"
-          style={{ flexBasis: "35%" }}
+          className="download d-flex flex-column px-2"
+          style={{ flexBasis: "40%" }}
         >
           <h2 className="fs-1 text-light">Download & Play Rummy Online</h2>
           <div className="wrap">
@@ -31,12 +32,14 @@ export default function Home() {
               Download
             </a>
           </div>
-          <p className="fs-5 py-3">
+          <p className="fs-4 py-3">
             Download The India's Best,100% Safe, Secure Rummy App and play
             against Real-Time Players and Earn Real Money.
           </p>
         </div>
       </div>
+      <Main />
+      <Home2 />
     </>
   );
 }

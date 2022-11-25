@@ -4,17 +4,21 @@ import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-// import Features from "./components/Features";
+import Privacy from "./components/Privacy";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <div className="">
+      <Router>
         <Navbar />
-        <Home />
-        {/* <Features /> */}
-        <Main />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Features />} /> */}
+          <Route path="/" element={<Main />} />
+          <Route path="/privacy" element={<Privacy />} />
+        </Routes>
         <Footer />
-      </div>
+      </Router>
     </>
   );
 }
