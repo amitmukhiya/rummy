@@ -12,15 +12,12 @@ export default function Main() {
           <div className="poker">
             <div className="payment">
               <div className="upi">
-                <img src={upi} alt="" srcset="" />
+                <img src={upi} alt="" />
               </div>
               <div className="bank">
-                <img src={bank} alt="" srcset="" />
+                <img src={bank} alt="" />
               </div>
             </div>
-            {/* <div className="img_1">
-              <img src={win} alt="" />
-            </div> */}
           </div>
         </div>
         <div className="component-3 py-2" style={{ textAlign: "center" }}>
@@ -29,17 +26,9 @@ export default function Main() {
               Best In Class Gaming Experience
             </h2>
             <div className="details-1 d-flex justify-content-center flex-wrap">
-              {/* <div>
-                <img src={require("./images/user.webp")} alt="" srcset="" />
-                <div>
-                  <p>
-                    1 Million + <br />
-                    Users
-                  </p>
-                </div>
-              </div> */}
+
               <div>
-                <img src={require("./images/secure.webp")} alt="" srcset="" />
+                <img src={require("./images/secure.webp")} alt="" />
                 <div>
                   <p>
                     100% Secure & <br />
@@ -48,7 +37,7 @@ export default function Main() {
                 </div>
               </div>
               <div>
-                <img src={require("./images/offer.webp")} alt="" srcset="" />
+                <img src={require("./images/offer.webp")} alt="" />
                 <div>
                   <p>
                     Upto 2000 <br />
@@ -57,7 +46,7 @@ export default function Main() {
                 </div>
               </div>
               <div>
-                <img src={require("./images/24x7.webp")} alt="" srcset="" />
+                <img src={require("./images/24x7.webp")} alt="" />
                 <div>
                   <p>
                     Fast & Active Customer <br /> Support

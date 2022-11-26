@@ -15,7 +15,7 @@ export default function Home_second() {
             Get Your Free Download Of Rummy App TODAY!
           </h2>
           <div className="wrap">
-            <a href="@" className="animated-button" type="button">
+            <a href="https://download-rummy-app.s3.ap-south-1.amazonaws.com/PlayRummy.apk" className="animated-button" type="button">
               <span></span>
               <span></span>
               <span></span>
@@ -29,7 +29,6 @@ export default function Home_second() {
             className="rummy_img rummy_img2"
             src={img2}
             alt=""
-            srcset=""
             width="70%"
             height="auto"
           />

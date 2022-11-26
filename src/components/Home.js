@@ -13,7 +13,6 @@ export default function Home() {
             className="rummy_img"
             src={img1}
             alt=""
-            srcset=""
             width="100%"
             height="auto"
           />
@@ -24,7 +23,7 @@ export default function Home() {
         >
           <h2 className="fs-1 text-light">Download & Play Rummy Online</h2>
           <div className="wrap">
-            <a href="@" className="animated-button" type="button">
+            <a href="https://download-rummy-app.s3.ap-south-1.amazonaws.com/PlayRummy.apk" className="animated-button" type="button">
               <span></span>
               <span></span>
               <span></span>
